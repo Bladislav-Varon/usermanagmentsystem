@@ -10,11 +10,12 @@ namespace UserManagementSystem
     {
         // Создаём список для хранения пользователей
         private List<string> _users = new List<string>();
-
+        private int _count = 0;
         // Метод для добавления пользователя
         public void AddUser(string username)
         {
             _users.Add(username);
+            _count = _users.Count;
         }
     }
 }
