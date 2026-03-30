@@ -17,5 +17,10 @@ namespace UserManagementSystem
             _users.Add(username);
             _count = _users.Count;
         }
+        public bool RemoveUser(string username)
+        {
+            return _users.Remove(username);
+        }
+
     }
 }
